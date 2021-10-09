@@ -8,11 +8,10 @@ description of Numer0n is [here](https://ja.wikipedia.org/wiki/Numer0n).
   1. gmail :st17173jn@gm.ibaraki-ct.ac.jp  
   2. TEL :[None](https://clipkosen.herokuapp.com/comment/)  
   
-  ## Yuzuki
-  ## Shun
+  ## Yuzuki🏁  
+  ## Shun  
   ## Momiage(CPO)  
   <span style="color: red; ">Momiage(CPO)</span>
   ## Takumi(CISO)
   ### else
   takizawa@gm.ibaraki-ct.ac.jp
-  In![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
