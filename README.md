@@ -9,12 +9,6 @@ description of Numer0n is [here](https://ja.wikipedia.org/wiki/Numer0n).
   2. TEL :[None](https://clipkosen.herokuapp.com/comment/)  
   
   ## Yuzuki🏁  
-  - Project manager☑
-  - Schedule manager✅
-  - CTO💖
-  - Ohno
-  - 5I
-  - Muscular[^1]
   - Tall, Smart, Rich, handsome[^1]  
   ```
   print "Hello everyone."
