@@ -15,7 +15,7 @@ description of Numer0n is [here](https://ja.wikipedia.org/wiki/Numer0n).
   - Muscular
   - Tall, Smart, Rich, handsome[^1]  
   ```
-  print Hello everyone.
+  print "Hello everyone."
   ```
   [^1]: personal impression by Nayuku
   ## Shun  
