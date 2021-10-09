@@ -13,8 +13,8 @@ description of Numer0n is [here](https://ja.wikipedia.org/wiki/Numer0n).
   - Ohno
   - 5I
   - Muscular
-  - Tall, Smart, Rich, handsome  
-  
+  - Tall, Smart, Rich, handsome[^1]  
+  [^1]: personal impression by Nayuku
   ## Shun  
   ## Momiage(CPO)  
   <span style="color: red; ">Momiage(CPO)</span>
