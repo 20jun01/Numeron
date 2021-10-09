@@ -10,7 +10,7 @@ description of Numer0n is [here](https://ja.wikipedia.org/wiki/Numer0n).
   
   ## Yuzuki
   ## Shun
-  ## <span style="color: red; ">Momiage(CPO)</span>
+  ## Momiage(CPO)  
   <span style="color: red; ">Momiage(CPO)</span>
   ## Takumi(CISO)
   ### else
