@@ -15,3 +15,4 @@ description of Numer0n is [here](https://ja.wikipedia.org/wiki/Numer0n).
   ## Takumi(CISO)
   ### else
   takizawa@gm.ibaraki-ct.ac.jp
+  In![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
