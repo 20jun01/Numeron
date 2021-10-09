@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class button_script_pl : MonoBehaviour
+public class button_script_com : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -14,7 +14,7 @@ public class button_script_pl : MonoBehaviour
     // when  button tapped, this function will be called
     public void OnClick(){
         // write code here.
-        // to the vs player scene(revise "addanpink" to appropriate name)
+        // to the vs com scene(revise "addanpink" to appropriate name)
         SceneManager.LoadScene("addanpink");
     }
 
