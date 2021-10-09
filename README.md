@@ -14,7 +14,6 @@ description of Numer0n is [here](https://ja.wikipedia.org/wiki/Numer0n).
   - 5I
   - Muscular[^1]
   - Tall, Smart, Rich, handsome[^1]  
-  >> 諸説あり
   ```
   print "Hello everyone."
   ```
