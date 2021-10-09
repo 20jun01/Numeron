@@ -9,7 +9,11 @@ description of Numer0n is [here](https://ja.wikipedia.org/wiki/Numer0n).
   2. TEL :[None](https://clipkosen.herokuapp.com/comment/)  
   
   ## Yuzuki🏁  
-  Project manager
+  - Project manager
+  - Ohno
+  - 5I
+  - Muscular
+  - Tall, Smart, Rich, handsome  
   
   ## Shun  
   ## Momiage(CPO)  
