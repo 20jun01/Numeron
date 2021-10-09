@@ -23,5 +23,4 @@ description of Numer0n is [here](https://ja.wikipedia.org/wiki/Numer0n).
   <span style="color: red; ">Momiage(CPO)</span>
   ## Takumi(CISO)
   ### else
-  takizawa@gm.ibaraki-ct.ac.jp
-<font color="Red">テキスト</font>
+  takizawa@gm.ibaraki-ct.ac.jp  
