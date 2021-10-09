@@ -22,5 +22,5 @@ description of Numer0n is [here](https://ja.wikipedia.org/wiki/Numer0n).
   ## Momiage(CPO)  
   <span style="color: red; ">Momiage(CPO)</span>
   ## Takumi(CISO)
-  ### else
+  ## Others
   takizawa@gm.ibaraki-ct.ac.jp  
