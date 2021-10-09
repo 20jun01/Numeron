@@ -24,3 +24,4 @@ description of Numer0n is [here](https://ja.wikipedia.org/wiki/Numer0n).
   ## Takumi(CISO)
   ### else
   takizawa@gm.ibaraki-ct.ac.jp
+<font color="Red">テキスト</font>
