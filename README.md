@@ -11,6 +11,7 @@ description of Numer0n is [here](https://ja.wikipedia.org/wiki/Numer0n).
   ## Yuzuki
   ## Shun
   ## <span style="color: red; ">Momiage(CPO)</span>
+  <span style="color: red; ">Momiage(CPO)</span>
   ## Takumi(CISO)
   ### else
   takizawa@gm.ibaraki-ct.ac.jp
