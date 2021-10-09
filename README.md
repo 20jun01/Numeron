@@ -12,12 +12,12 @@ description of Numer0n is [here](https://ja.wikipedia.org/wiki/Numer0n).
   - Project manager
   - Ohno
   - 5I
-  - Muscular
+  - Muscular[^1]
   - Tall, Smart, Rich, handsome[^1]  
   ```
   print "Hello everyone."
   ```
-  [^1]: personal impression by Nayuku
+  [^1]: impression by Nayuku
   ## Shun  
   ## Momiage(CPO)  
   <span style="color: red; ">Momiage(CPO)</span>
