@@ -9,6 +9,8 @@ description of Numer0n is [here](https://ja.wikipedia.org/wiki/Numer0n).
   2. TEL :[None](https://clipkosen.herokuapp.com/comment/)  
   
   ## Yuzuki🏁  
+  Project manager
+  
   ## Shun  
   ## Momiage(CPO)  
   <span style="color: red; ">Momiage(CPO)</span>
