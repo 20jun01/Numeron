@@ -32,6 +32,6 @@ public class button_script_pl : MonoBehaviour
     // delay function
     static async void change_scene(){
         await Task.Delay(350);
-        SceneManager.LoadScene("addanpink");
+        SceneManager.LoadScene("Select_num");
     }
 }
