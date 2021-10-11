@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System;
 using System.Threading.Tasks;
+// Addressables
+using UnityEngine.AddressableAssets;
 
 public class button_script_staff : MonoBehaviour
 {
@@ -17,7 +19,6 @@ public class button_script_staff : MonoBehaviour
     // when  button tapped, this function will be called
     public void OnClick(){
         // write code here.
-        // to the staff scene(revise "addanpink" to appropriate name)
         sound_tap.PlayOneShot(sound_tap.clip);
         button_script_staff.change_scene();
     }
@@ -31,6 +32,15 @@ public class button_script_staff : MonoBehaviour
     // delay function
     static async void change_scene(){
         await Task.Delay(350);
-        SceneManager.LoadScene("Select_num");
+        // Get GameObject and show with Addressables.
+        // If you want more information, click here.(https://light11.hatenadiary.com/entry/2019/12/26/225232)
+        Addressables
+            .LoadAssetAsync<GameObject>("Image_staff") // アドレスを文字列で指定
+            .Completed += op => {
+                // 結果を取得してインスタンス化
+                // 本来はエラーハンドリングなど必要
+                Instantiate(op.Result);
+            };
+        // SceneManager.LoadScene("Select_num");
     }
 }
