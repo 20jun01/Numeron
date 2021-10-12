@@ -4,7 +4,7 @@ using UnityEngine;
 // UI処理のクラスを使用する宣言
 using UnityEngine.UI;
  
-public class NumberChoice : MonoBehaviour
+public class NumberChoice3 : MonoBehaviour
 {
     // Image コンポーネントを格納する変数
     private Image m_Image;
@@ -64,12 +64,12 @@ public class NumberChoice : MonoBehaviour
     }
 
     // ゲーム実行中に毎フレーム実行する処理
-    public void OnClick_waku1(int number)
+    public void OnClick_waku3(int number)
     {
-        if(number == 10){
+        if(number == 12){
             Change = true;
         }
-        else if(number == 11 || number == 12){
+        else if(number == 10 || number == 11){
             Change = false;
         }
     }
