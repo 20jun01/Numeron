@@ -203,7 +203,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 981953584}
-        m_MethodName: OnClick
+        m_MethodName: OnClick_Change10
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -214,7 +214,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1141221728}
-        m_MethodName: OnClick
+        m_MethodName: OnClick_Change11
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -225,7 +225,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 329345113}
-        m_MethodName: OnClick
+        m_MethodName: OnClick_Change12
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -484,29 +484,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 981953584}
-        m_MethodName: OnClick_waku1
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 10
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1141221728}
-        m_MethodName: OnClick_waku2
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 10
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 329345113}
-        m_MethodName: OnClick_waku3
+        m_MethodName: OnClick_waku
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -563,8 +541,8 @@ GameObject:
   m_Component:
   - component: {fileID: 329345112}
   - component: {fileID: 329345115}
-  - component: {fileID: 329345114}
   - component: {fileID: 329345113}
+  - component: {fileID: 329345114}
   m_Layer: 5
   m_Name: Image (3)
   m_TagString: Untagged
@@ -600,7 +578,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 329345111}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71f1e5ad4ee38da4b852ab3f30bb76c3, type: 3}
+  m_Script: {fileID: 11500000, guid: b4619444c980c7249af3ad077944421c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Sprite:
@@ -733,7 +711,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 981953584}
-        m_MethodName: OnClick
+        m_MethodName: OnClick_Change10
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -744,7 +722,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1141221728}
-        m_MethodName: OnClick
+        m_MethodName: OnClick_Change11
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -755,7 +733,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 329345113}
-        m_MethodName: OnClick
+        m_MethodName: OnClick_Change12
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1045,7 +1023,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 981953584}
-        m_MethodName: OnClick
+        m_MethodName: OnClick_Change10
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1056,7 +1034,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1141221728}
-        m_MethodName: OnClick
+        m_MethodName: OnClick_Change11
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1067,7 +1045,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 329345113}
-        m_MethodName: OnClick
+        m_MethodName: OnClick_Change12
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1239,7 +1217,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 981953582}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1725079de35fe54b9b82b04b33f70b3, type: 3}
+  m_Script: {fileID: 11500000, guid: b4619444c980c7249af3ad077944421c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Sprite:
@@ -1372,7 +1350,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 981953584}
-        m_MethodName: OnClick
+        m_MethodName: OnClick_Change10
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1383,7 +1361,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1141221728}
-        m_MethodName: OnClick
+        m_MethodName: OnClick_Change11
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1394,7 +1372,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 329345113}
-        m_MethodName: OnClick
+        m_MethodName: OnClick_Change12
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1488,7 +1466,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1141221726}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88777e4e674a63f49be2251d933312dd, type: 3}
+  m_Script: {fileID: 11500000, guid: b4619444c980c7249af3ad077944421c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Sprite:
@@ -1621,30 +1599,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 981953584}
-        m_MethodName: OnClick_waku1
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 12
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1141221728}
-        m_MethodName: OnClick_waku2
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 12
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 329345113}
-        m_MethodName: OnClick_waku3
+        m_MethodName: OnClick_waku
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1773,7 +1729,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 981953584}
-        m_MethodName: OnClick
+        m_MethodName: OnClick_Change10
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1784,7 +1740,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1141221728}
-        m_MethodName: OnClick
+        m_MethodName: OnClick_Change11
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1795,7 +1751,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 329345113}
-        m_MethodName: OnClick
+        m_MethodName: OnClick_Change12
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1924,7 +1880,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 981953584}
-        m_MethodName: OnClick
+        m_MethodName: OnClick_Change10
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1935,7 +1891,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1141221728}
-        m_MethodName: OnClick
+        m_MethodName: OnClick_Change11
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1946,7 +1902,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 329345113}
-        m_MethodName: OnClick
+        m_MethodName: OnClick_Change12
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2075,30 +2031,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 981953584}
-        m_MethodName: OnClick_waku1
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 11
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1141221728}
-        m_MethodName: OnClick_waku2
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 11
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 329345113}
-        m_MethodName: OnClick_waku3
+        m_MethodName: OnClick_waku
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2227,7 +2161,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 981953584}
-        m_MethodName: OnClick
+        m_MethodName: OnClick_Change10
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2238,7 +2172,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1141221728}
-        m_MethodName: OnClick
+        m_MethodName: OnClick_Change11
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2249,7 +2183,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 329345113}
-        m_MethodName: OnClick
+        m_MethodName: OnClick_Change12
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2456,7 +2390,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 981953584}
-        m_MethodName: OnClick
+        m_MethodName: OnClick_Change10
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2467,7 +2401,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1141221728}
-        m_MethodName: OnClick
+        m_MethodName: OnClick_Change11
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2478,7 +2412,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 329345113}
-        m_MethodName: OnClick
+        m_MethodName: OnClick_Change12
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2607,7 +2541,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 981953584}
-        m_MethodName: OnClick
+        m_MethodName: OnClick_Change10
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2618,7 +2552,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1141221728}
-        m_MethodName: OnClick
+        m_MethodName: OnClick_Change11
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2629,7 +2563,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 329345113}
-        m_MethodName: OnClick
+        m_MethodName: OnClick_Change12
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2993,7 +2927,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 981953584}
-        m_MethodName: OnClick
+        m_MethodName: OnClick_Change10
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3004,7 +2938,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1141221728}
-        m_MethodName: OnClick
+        m_MethodName: OnClick_Change11
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3015,7 +2949,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 329345113}
-        m_MethodName: OnClick
+        m_MethodName: OnClick_Change12
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
