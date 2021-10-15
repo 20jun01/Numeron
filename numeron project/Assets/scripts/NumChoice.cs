@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 // UI処理のクラスを使用する宣言
 using UnityEngine.UI;
- 
+using System;
 public class NumChoice : MonoBehaviour
 {
     // Image コンポーネントを格納する変数
@@ -67,10 +67,27 @@ public class NumChoice : MonoBehaviour
 
     public void OnClick_Change_P()
     {
+
         int n;
         bool flag = true;
 
         n = flag_p ? 0 : 1;
+        int n_n=0;
+        for(int i=0;i<3;i++){
+            for(int h=i+1;h<3;h++){
+                if(array[n,i]==array[n,h]){
+                    n_n=1;
+                    break;
+                }
+            }
+            if(n_n==1){
+                break;
+            }
+        }
+        if(n_n==1){
+            n_n=0;
+            return;
+        }
         for(int i=0; i<3; i++){
             if(array[n,i]<0) flag = false;
         }
@@ -85,6 +102,7 @@ public class NumChoice : MonoBehaviour
             if(array_Ans[1,2]>-1) flag_Ans = false;
             GameObject image_object = GameObject.Find("Image");
             m_Image.sprite = player2.sprite;
+            Debug.Log(array[0,0]);
             waku1.GetComponent<Image>().sprite=waku.sprite;
             waku2.GetComponent<Image>().sprite=waku.sprite;
             waku3.GetComponent<Image>().sprite=waku.sprite;
