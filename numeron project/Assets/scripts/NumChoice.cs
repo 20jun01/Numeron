@@ -23,10 +23,16 @@ public class NumChoice : MonoBehaviour
     //正解
     public static int[,] array_Ans = new int[2,3]{{-1,-1,-1},{-1,-1,-1}};
 
+    public Image waku1;
+    public Image waku2;
+    public Image waku3;
+    public Image waku;
+    public Image player2;
     // ゲーム開始時に実行する処理
     void Start()
     {
         // Image コンポーネントを取得して変数 m_Image に格納
+
         m_Image = GetComponent<Image>();
         Change = 0;
         flag_p = true;
@@ -76,9 +82,12 @@ public class NumChoice : MonoBehaviour
                 array[n,i] = -1;
             }
             m_Image.sprite = m_Sprite[1-n];
-            if(array_Ans[2,3]>-1) flag_Ans = false;
+            if(array_Ans[1,2]>-1) flag_Ans = false;
             GameObject image_object = GameObject.Find("Image");
-            m_Image.sprite = m_Sprite[0];
+            m_Image.sprite = player2.sprite;
+            waku1.GetComponent<Image>().sprite=waku.sprite;
+            waku2.GetComponent<Image>().sprite=waku.sprite;
+            waku3.GetComponent<Image>().sprite=waku.sprite;
         }
     }
   

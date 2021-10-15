@@ -353,7 +353,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 981953584}
+      - m_Target: {fileID: 1352326927}
         m_MethodName: OnClick_Change_P
         m_Mode: 1
         m_Arguments:
@@ -592,6 +592,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 5e020fb3f3c641148a5d4a8c9e0e049a, type: 3}
   - {fileID: 21300000, guid: e9465fcfe745da5409b9d9f49a3b76e2, type: 3}
   - {fileID: 21300000, guid: 8f15acef8c291704da55a463452b4ac8, type: 3}
+  waku: {fileID: 0}
 --- !u!114 &329345114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1231,6 +1232,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 5e020fb3f3c641148a5d4a8c9e0e049a, type: 3}
   - {fileID: 21300000, guid: e9465fcfe745da5409b9d9f49a3b76e2, type: 3}
   - {fileID: 21300000, guid: 8f15acef8c291704da55a463452b4ac8, type: 3}
+  waku: {fileID: 0}
 --- !u!114 &981953585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1480,6 +1482,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 5e020fb3f3c641148a5d4a8c9e0e049a, type: 3}
   - {fileID: 21300000, guid: e9465fcfe745da5409b9d9f49a3b76e2, type: 3}
   - {fileID: 21300000, guid: 8f15acef8c291704da55a463452b4ac8, type: 3}
+  waku: {fileID: 0}
 --- !u!114 &1141221729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2169,6 +2172,7 @@ MonoBehaviour:
   m_Sprite:
   - {fileID: 21300000, guid: 1999a2d95cc1eac438f7e8b709710655, type: 3}
   - {fileID: 21300000, guid: d762968070e93a0468ca837b8f687839, type: 3}
+  waku: {fileID: 0}
 --- !u!1 &1398159554
 GameObject:
   m_ObjectHideFlags: 0
