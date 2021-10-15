@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 // UI処理のクラスを使用する宣言
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using System;
 public class NumChoice : MonoBehaviour
 {
@@ -28,6 +29,10 @@ public class NumChoice : MonoBehaviour
     public Image waku3;
     public Image waku;
     public Image player2;
+    public Image player1;
+    //gamestartPanel
+    [SerializeField] GameObject gamePanel;
+    public Text EBtext;
     // ゲーム開始時に実行する処理
     void Start()
     {
@@ -64,6 +69,10 @@ public class NumChoice : MonoBehaviour
         if(flag_p) array[0,n] = number;
         else array[1,n] = number;
     }
+    private IEnumerator Delay(){
+        yield return new WaitForSeconds(1.5f);
+        gamePanel.SetActive(false);
+    }
 
     public void OnClick_Change_P()
     {
@@ -72,6 +81,7 @@ public class NumChoice : MonoBehaviour
         bool flag = true;
 
         n = flag_p ? 0 : 1;
+        //ダブりはダメ
         int n_n=0;
         for(int i=0;i<3;i++){
             for(int h=i+1;h<3;h++){
@@ -88,25 +98,66 @@ public class NumChoice : MonoBehaviour
             n_n=0;
             return;
         }
+        ///////////////////
+
         for(int i=0; i<3; i++){
             if(array[n,i]<0) flag = false;
         }
         
         if(flag){
+            if(!flag_Ans){
+            int[] jj=numeron(array,array_Ans,n);/////////////////////////
+            if(jj[0]==3){
+                if(n==0){
+                SceneManager.LoadScene("Result");
+                }
+            }
+            EBtext.text=jj[0].ToString()+"Eat"+jj[1].ToString()+"Byte";
+            }
             flag_p = flag_p ? false : true;
             for(int i=0; i<3; i++){
                 if(flag_Ans) array_Ans[n,i] = array[n,i];
                 array[n,i] = -1;
             }
             m_Image.sprite = m_Sprite[1-n];
-            if(array_Ans[1,2]>-1) flag_Ans = false;
             GameObject image_object = GameObject.Find("Image");
+            if(n==0){
             m_Image.sprite = player2.sprite;
-            Debug.Log(array[0,0]);
+            }else{
+            m_Image.sprite = player1.sprite;
+            }
             waku1.GetComponent<Image>().sprite=waku.sprite;
             waku2.GetComponent<Image>().sprite=waku.sprite;
             waku3.GetComponent<Image>().sprite=waku.sprite;
+            if(n==1 && flag_Ans) {
+                flag_Ans = false;
+                gamePanel.SetActive(true);
+                StartCoroutine("Delay");
+            }
         }
     }
-  
+  ///////////イートか、バイトか
+  private int[]  numeron(int[,] array,int[,] ans_array,int n){
+      int[] EB=new int[2]{0,0};
+      int j=0;
+      if(n==0){
+          j=1;
+      }
+      for(int i=0;i<3;i++){
+          for(int h=0;h<3;h++){
+              if(i==h && ans_array[j,i]==array[n,h]){
+                  EB[0]++;
+                  break;
+              }
+              else if(ans_array[j,i]==array[n,h]){
+                  EB[1]++;
+                  break;
+              }
+          }
+      }
+   //   Debug.Log(EB[0]);
+  //    Debug.Log(EB[1]);
+    return EB;
+  }
+  /////////////////////////////////
 }
