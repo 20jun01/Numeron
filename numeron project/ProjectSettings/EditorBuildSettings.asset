@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Predict_num.unity
     guid: 66bc00ad4c70d784284ada4b4ac6a5c3
+  - enabled: 1
+    path: Assets/Scenes/Result.unity
+    guid: a584e27fcd86d514a9099450abaf3be1
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: e4529db973b312a4cbb7dfa1de2a0446,
       type: 2}

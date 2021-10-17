@@ -20,7 +20,6 @@ public class NumChoice : MonoBehaviour
 
     //予想&最初の正解入力
     public static int[,] array = new int[2,3]{{-1,-1,-1},{-1,-1,-1}};
-
     //正解
     public static int[,] array_Ans = new int[2,3]{{-1,-1,-1},{-1,-1,-1}};
 
@@ -90,7 +89,7 @@ public class NumChoice : MonoBehaviour
     }
     private IEnumerator DelayE3()
     {
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(0.8f);
         EB.enabled = false;
         SceneManager.LoadScene("Result");
     }
