@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 825f49f34e5fb83498e5b90eb86e6ee1
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Kavoon
+  fontNames:
+  - Kavoon
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: a11f9d07c170a6e448c8fad3242ca93c, type: 3}
+  - {fileID: 12800000, guid: 2cedc2b7133a2164b992f64e896348bf, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
