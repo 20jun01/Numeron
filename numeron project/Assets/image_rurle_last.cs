@@ -10,6 +10,10 @@ public class image_rurle_last : MonoBehaviour
         
     }
 
+    public void OnClick(){
+        this.gameObject.SetActive(false);
+    }
+
     // Update is called once per frame
     void Update()
     {

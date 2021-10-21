@@ -30,6 +30,17 @@ public class NumChoice : MonoBehaviour
     public Image waku;
     public Image player2;
     public Image player1;
+    [SerializeField] Image EB;
+    public Image e0b0;
+    public Image e1b0;
+    public Image e2b0;
+    public Image e3;
+    public Image e0b1;
+    public Image e0b2;
+    public Image e0b3;
+    public Image e1b1;
+    public Image e1b2;
+    
     //gamestartPanel
     [SerializeField] GameObject gamePanel;
     public Text EBtext;
@@ -73,6 +84,31 @@ public class NumChoice : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         gamePanel.SetActive(false);
     }
+    private IEnumerator DelayEB(){
+        yield return new WaitForSeconds(1.0f);
+        EB.enabled=false;
+    }
+    private IEnumerator DelayE3(){
+        yield return new WaitForSeconds(0.8f);
+        EB.enabled=false;
+        SceneManager.LoadScene("Result");
+    }
+    private IEnumerator Delaychange12(){
+        yield return new WaitForSeconds(1.0f);
+        m_Image.sprite=player2.sprite;
+        waku.GetComponent<Image>().sprite=waku.sprite;
+        waku1.GetComponent<Image>().sprite=waku.sprite;
+        waku2.GetComponent<Image>().sprite=waku.sprite;
+        waku3.GetComponent<Image>().sprite=waku.sprite;
+    }
+    private IEnumerator Delaychange21(){
+        yield return new WaitForSeconds(1.0f);
+         m_Image.sprite=player1.sprite;
+        waku.GetComponent<Image>().sprite=waku.sprite;
+        waku1.GetComponent<Image>().sprite=waku.sprite;
+        waku2.GetComponent<Image>().sprite=waku.sprite;
+        waku3.GetComponent<Image>().sprite=waku.sprite;
+    }
 
     public void OnClick_Change_P()
     {
@@ -107,28 +143,51 @@ public class NumChoice : MonoBehaviour
         if(flag){
             if(!flag_Ans){
             int[] jj=numeron(array,array_Ans,n);/////////////////////////
-            if(jj[0]==3){
-                if(n==0){
-                SceneManager.LoadScene("Result");
-                }
+            EB.enabled=true;
+            if(jj[0]==0){
+                if(jj[1]==0) EB.sprite=e0b0.sprite;
+                else if(jj[1]==1) EB.sprite=e0b1.sprite;
+                else if(jj[1]==2) EB.sprite=e0b2.sprite;
+                else if(jj[1]==3) EB.sprite=e0b3.sprite;
             }
-            EBtext.text=jj[0].ToString()+"Eat"+jj[1].ToString()+"Byte";
+            else if(jj[0]==1){
+                if(jj[1]==0) EB.sprite=e1b0.sprite;
+                else if(jj[1]==1) EB.sprite=e1b1.sprite;
+                else if(jj[1]==2) EB.sprite=e1b2.sprite;
+            }
+            else if(jj[0]==2){
+                if(jj[1]==0) EB.sprite=e2b0.sprite;
+            }
+            else if(jj[0]==3){
+                EB.sprite=e3.sprite;
+                StartCoroutine("DelayE3");
+            }
+            StartCoroutine("DelayEB");
             }
             flag_p = flag_p ? false : true;
             for(int i=0; i<3; i++){
                 if(flag_Ans) array_Ans[n,i] = array[n,i];
                 array[n,i] = -1;
             }
-            m_Image.sprite = m_Sprite[1-n];
-            GameObject image_object = GameObject.Find("Image");
-            if(n==0){
-            m_Image.sprite = player2.sprite;
-            }else{
-            m_Image.sprite = player1.sprite;
+           /* m_Image.sprite = m_Sprite[1-n];
+            GameObject image_object = GameObject.Find("Image");*/
+            if(n==0 && !flag_Ans){
+             StartCoroutine("Delaychange12");
+            }else if(n==1 && !flag_Ans){
+             StartCoroutine("Delaychange21");
+            }else if(n==0 && flag_Ans){
+             m_Image.sprite=player2.sprite;
+             waku.GetComponent<Image>().sprite=waku.sprite;
+             waku1.GetComponent<Image>().sprite=waku.sprite;
+             waku2.GetComponent<Image>().sprite=waku.sprite;
+             waku3.GetComponent<Image>().sprite=waku.sprite;
+            }else if(n==1 && flag_Ans){
+             m_Image.sprite=player1.sprite;
+             waku.GetComponent<Image>().sprite=waku.sprite;
+             waku1.GetComponent<Image>().sprite=waku.sprite;
+             waku2.GetComponent<Image>().sprite=waku.sprite;
+             waku3.GetComponent<Image>().sprite=waku.sprite;
             }
-            waku1.GetComponent<Image>().sprite=waku.sprite;
-            waku2.GetComponent<Image>().sprite=waku.sprite;
-            waku3.GetComponent<Image>().sprite=waku.sprite;
             if(n==1 && flag_Ans) {
                 flag_Ans = false;
                 gamePanel.SetActive(true);
