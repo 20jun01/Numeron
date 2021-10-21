@@ -20,6 +20,7 @@ public class NumChoice : MonoBehaviour
 
     //予想&最初の正解入力
     public static int[,] array = new int[2,3]{{-1,-1,-1},{-1,-1,-1}};
+
     //正解
     public static int[,] array_Ans = new int[2,3]{{-1,-1,-1},{-1,-1,-1}};
 
@@ -29,19 +30,9 @@ public class NumChoice : MonoBehaviour
     public Image waku;
     public Image player2;
     public Image player1;
-    [SerializeField] Image EB;
-    public Image E0B0;
-    public Image E1B0;
-    public Image E2B0;
-    public Image E3;
-    public Image E0B1;
-    public Image E0B2;
-    public Image E0B3;
-    public Image E1B1;
-    public Image E1B2;
-    public Image E2B1;
     //gamestartPanel
     [SerializeField] GameObject gamePanel;
+    public Text EBtext;
     // ゲーム開始時に実行する処理
     void Start()
     {
@@ -82,36 +73,10 @@ public class NumChoice : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         gamePanel.SetActive(false);
     }
-    private IEnumerator DelayEB()
-    {
-        yield return new WaitForSeconds(1.0f);
-        EB.enabled=false;
-    }
-    private IEnumerator DelayE3()
-    {
-        yield return new WaitForSeconds(0.8f);
-        EB.enabled = false;
-        SceneManager.LoadScene("Result");
-    }
-    private IEnumerator Delaychange12()
-    {
-        yield return new WaitForSeconds(1.0f);
-        m_Image.sprite = player2.sprite;
-        waku1.GetComponent<Image>().sprite = waku.sprite;
-        waku2.GetComponent<Image>().sprite = waku.sprite;
-        waku3.GetComponent<Image>().sprite = waku.sprite;
-    }
-    private IEnumerator Delaychange21()
-    {
-        yield return new WaitForSeconds(1.0f);
-        m_Image.sprite = player1.sprite;
-        waku1.GetComponent<Image>().sprite = waku.sprite;
-        waku2.GetComponent<Image>().sprite = waku.sprite;
-        waku3.GetComponent<Image>().sprite = waku.sprite;
-    }
 
     public void OnClick_Change_P()
     {
+
         int n;
         bool flag = true;
 
@@ -138,91 +103,32 @@ public class NumChoice : MonoBehaviour
         for(int i=0; i<3; i++){
             if(array[n,i]<0) flag = false;
         }
-        if (flag){
+        
+        if(flag){
             if(!flag_Ans){
             int[] jj=numeron(array,array_Ans,n);/////////////////////////
-                EB.enabled=true;
-                if (jj[0] == 0)
-                {
-                    if (jj[1] == 0)
-                    {
-                        EB.sprite = E0B0.sprite;
-                    }
-                    else if (jj[1] == 1)
-                    {
-                        EB.sprite = E0B1.sprite;
-                    }
-                    else if (jj[1] == 2)
-                    {
-                        EB.sprite = E0B2.sprite;
-                    }
-                    else if (jj[1] == 3)
-                    {
-                        EB.sprite = E0B3.sprite;
-                    }
+            if(jj[0]==3){
+                if(n==0){
+                SceneManager.LoadScene("Result");
                 }
-                else if (jj[0] == 1)
-                {
-                    if (jj[1] == 0)
-                    {
-                        EB.sprite = E1B0.sprite;
-                    }
-                    else if (jj[1] == 1)
-                    {
-                        EB.sprite = E1B1.sprite;
-                    }
-                    else if (jj[1] == 2)
-                    {
-                        EB.sprite = E1B2.sprite;
-                    }
-                }
-                else if (jj[0] == 2)
-                {
-                    if (jj[1] == 0)
-                    {
-                        EB.sprite = E2B0.sprite;
-                    }
-                    else if (jj[1] == 1)
-                    {
-                        EB.sprite = E2B1.sprite;
-                    }
-                }
-                else if (jj[0] == 3)
-                {
-                    EB.sprite = E3.sprite;
-                    StartCoroutine("DelayE3");
-                }
-                StartCoroutine("DelayEB");
+            }
+            EBtext.text=jj[0].ToString()+"Eat"+jj[1].ToString()+"Byte";
             }
             flag_p = flag_p ? false : true;
             for(int i=0; i<3; i++){
                 if(flag_Ans) array_Ans[n,i] = array[n,i];
                 array[n,i] = -1;
             }
-           // m_Image.sprite = m_Sprite[1-n];
-            //GameObject image_object = GameObject.Find("Image");
-            if (n == 0 && !flag_Ans)
-            {
-                StartCoroutine("Delaychange12");
+            m_Image.sprite = m_Sprite[1-n];
+            GameObject image_object = GameObject.Find("Image");
+            if(n==0){
+            m_Image.sprite = player2.sprite;
+            }else{
+            m_Image.sprite = player1.sprite;
             }
-            else if (n == 1 && !flag_Ans)
-            {
-                StartCoroutine("Delaychange21");
-            }
-            else if (n == 0 && flag_Ans)
-            {
-                m_Image.sprite = player2.sprite;
-                waku1.GetComponent<Image>().sprite = waku.sprite;
-                waku2.GetComponent<Image>().sprite = waku.sprite;
-                waku3.GetComponent<Image>().sprite = waku.sprite;
-            }
-            else if (n == 1 && flag_Ans)
-            {
-                m_Image.sprite = player1.sprite;
-               waku1.GetComponent<Image>().sprite = waku.sprite;
-                waku2.GetComponent<Image>().sprite = waku.sprite;
-                waku3.GetComponent<Image>().sprite = waku.sprite;
-            }
+            waku1.GetComponent<Image>().sprite=waku.sprite;
+            waku2.GetComponent<Image>().sprite=waku.sprite;
+            waku3.GetComponent<Image>().sprite=waku.sprite;
             if(n==1 && flag_Ans) {
                 flag_Ans = false;
                 gamePanel.SetActive(true);
@@ -249,6 +155,8 @@ public class NumChoice : MonoBehaviour
               }
           }
       }
+   //   Debug.Log(EB[0]);
+  //    Debug.Log(EB[1]);
     return EB;
   }
   /////////////////////////////////
